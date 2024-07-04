@@ -1,0 +1,32 @@
+GET http://localhost:5226/games
+
+
+### Send Req 1
+
+GET http://localhost:5226/games/1
+
+
+### post req
+
+POST http://localhost:5226/games
+Content-Type: application/json
+
+# dummy post creation
+
+{
+    "name": "Minecraft",
+    "genre": "MMO",
+    "price": 19.99,
+    "releaseDate": "2011-11-18"
+}
+
+### Send Put Req
+PUT http://localhost:5226/games/4 
+Content-Type: application/json
+
+{
+    "name": "Street Fighter II Turbo",
+    "genre": "Fighting",
+    "price": 9.99,
+    "releaseDate": "1992-07-15"
+}
